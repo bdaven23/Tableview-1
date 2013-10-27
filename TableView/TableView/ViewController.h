@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "DataStore.h"
 
-@interface ViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate>
+@interface ViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate, UISearchDisplayDelegate>
 
 @end
