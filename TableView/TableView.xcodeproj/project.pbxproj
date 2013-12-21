@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		161C337D184BB994003919ED /* Apples.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 161C3378184BB994003919ED /* Apples.jpg */; };
+		161C337E184BB994003919ED /* Apricots.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 161C3379184BB994003919ED /* Apricots.jpg */; };
+		161C337F184BB994003919ED /* Kiwis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 161C337A184BB994003919ED /* Kiwis.jpg */; };
+		161C3380184BB994003919ED /* Mangoes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 161C337B184BB994003919ED /* Mangoes.jpg */; };
+		161C3381184BB994003919ED /* Oranges.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 161C337C184BB994003919ED /* Oranges.jpg */; };
 		163F156C181C89B800E193F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 163F156B181C89B800E193F7 /* Foundation.framework */; };
 		163F156E181C89B800E193F7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 163F156D181C89B800E193F7 /* CoreGraphics.framework */; };
 		163F1570181C89B800E193F7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 163F156F181C89B800E193F7 /* UIKit.framework */; };
@@ -25,11 +30,6 @@
 		163F15A5181C8C7400E193F7 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 163F15A3181C8C7400E193F7 /* Model.xcdatamodeld */; };
 		163F15A8181C8EDE00E193F7 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 163F15A7181C8EDE00E193F7 /* Item.m */; };
 		163F15AA181C8F3C00E193F7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 163F15A9181C8F3C00E193F7 /* CoreData.framework */; };
-		163F15AF181C926B00E193F7 /* Apples.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 163F15AE181C926B00E193F7 /* Apples.jpg */; };
-		163F15B5181CB8D100E193F7 /* Mangoes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 163F15B2181CB8D100E193F7 /* Mangoes.jpg */; };
-		163F15B6181CB8D100E193F7 /* Kiwis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 163F15B3181CB8D100E193F7 /* Kiwis.jpg */; };
-		1683B3D4181CBC0A004952CF /* Apricots.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1683B3D3181CBC0A004952CF /* Apricots.jpg */; };
-		1683B3D6181CD6DC004952CF /* Oranges.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1683B3D5181CD6DC004952CF /* Oranges.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +43,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		161C3378184BB994003919ED /* Apples.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Apples.jpg; sourceTree = "<group>"; };
+		161C3379184BB994003919ED /* Apricots.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Apricots.jpg; sourceTree = "<group>"; };
+		161C337A184BB994003919ED /* Kiwis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Kiwis.jpg; sourceTree = "<group>"; };
+		161C337B184BB994003919ED /* Mangoes.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Mangoes.jpg; sourceTree = "<group>"; };
+		161C337C184BB994003919ED /* Oranges.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Oranges.jpg; sourceTree = "<group>"; };
 		163F1568181C89B800E193F7 /* TableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		163F156B181C89B800E193F7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		163F156D181C89B800E193F7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -68,11 +73,6 @@
 		163F15A6181C8EDE00E193F7 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
 		163F15A7181C8EDE00E193F7 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
 		163F15A9181C8F3C00E193F7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		163F15AE181C926B00E193F7 /* Apples.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Apples.jpg; path = ../../../../Apples.jpg; sourceTree = "<group>"; };
-		163F15B2181CB8D100E193F7 /* Mangoes.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Mangoes.jpg; path = ../../../../Mangoes.jpg; sourceTree = "<group>"; };
-		163F15B3181CB8D100E193F7 /* Kiwis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Kiwis.jpg; path = ../../../../Kiwis.jpg; sourceTree = "<group>"; };
-		1683B3D3181CBC0A004952CF /* Apricots.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Apricots.jpg; path = ../../../../Apricots.jpg; sourceTree = "<group>"; };
-		1683B3D5181CD6DC004952CF /* Oranges.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Oranges.jpg; path = ../../../../Oranges.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +144,11 @@
 				163F157D181C89B800E193F7 /* Main.storyboard */,
 				163F1580181C89B800E193F7 /* ViewController.h */,
 				163F1581181C89B800E193F7 /* ViewController.m */,
+				161C3378184BB994003919ED /* Apples.jpg */,
+				161C3379184BB994003919ED /* Apricots.jpg */,
+				161C337A184BB994003919ED /* Kiwis.jpg */,
+				161C337B184BB994003919ED /* Mangoes.jpg */,
+				161C337C184BB994003919ED /* Oranges.jpg */,
 				163F1583181C89B800E193F7 /* Images.xcassets */,
 				163F1572181C89B800E193F7 /* Supporting Files */,
 			);
@@ -156,7 +161,6 @@
 				163F1573181C89B800E193F7 /* TableView-Info.plist */,
 				163F1574181C89B800E193F7 /* InfoPlist.strings */,
 				163F1577181C89B800E193F7 /* main.m */,
-				163F15AB181C91FC00E193F7 /* photos */,
 				163F1579181C89B800E193F7 /* TableView-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -178,18 +182,6 @@
 				163F1593181C89B800E193F7 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		163F15AB181C91FC00E193F7 /* photos */ = {
-			isa = PBXGroup;
-			children = (
-				163F15AE181C926B00E193F7 /* Apples.jpg */,
-				1683B3D5181CD6DC004952CF /* Oranges.jpg */,
-				163F15B3181CB8D100E193F7 /* Kiwis.jpg */,
-				163F15B2181CB8D100E193F7 /* Mangoes.jpg */,
-				1683B3D3181CBC0A004952CF /* Apricots.jpg */,
-			);
-			name = photos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,13 +260,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				163F15B5181CB8D100E193F7 /* Mangoes.jpg in Resources */,
+				161C3380184BB994003919ED /* Mangoes.jpg in Resources */,
 				163F1584181C89B800E193F7 /* Images.xcassets in Resources */,
+				161C3381184BB994003919ED /* Oranges.jpg in Resources */,
 				163F1576181C89B800E193F7 /* InfoPlist.strings in Resources */,
-				1683B3D4181CBC0A004952CF /* Apricots.jpg in Resources */,
-				163F15AF181C926B00E193F7 /* Apples.jpg in Resources */,
-				1683B3D6181CD6DC004952CF /* Oranges.jpg in Resources */,
-				163F15B6181CB8D100E193F7 /* Kiwis.jpg in Resources */,
+				161C337D184BB994003919ED /* Apples.jpg in Resources */,
+				161C337F184BB994003919ED /* Kiwis.jpg in Resources */,
+				161C337E184BB994003919ED /* Apricots.jpg in Resources */,
 				163F157F181C89B800E193F7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -16,14 +16,9 @@
 
 @implementation DataStore
 
-
-
 @synthesize managedObjectContext = _managedObjectContext;
-
 @synthesize  managedObjectModel = _managedObjectModel;
-
 @synthesize persistentStoreCoordinator =_persistentStoreCoordinator;
-
 @synthesize fetchedResultsController =_fetchedResultsController;
 
 +(DataStore*)sharedStore {
@@ -42,19 +37,12 @@
     if (_fetchedResultsController != nil) {
         return _fetchedResultsController;
     }
-    
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
-    
     NSEntityDescription *entity = [NSEntityDescription entityForName:@"Item" inManagedObjectContext:self.managedObjectContext];
-    
     [fetchRequest setEntity:entity];
-    
     [fetchRequest setFetchBatchSize:20];
-    
     NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"dateAdded" ascending:NO];
-    
     [fetchRequest setSortDescriptors:@[sortDescriptor]];
-    
     
     NSFetchedResultsController *myFetchedResultsController =
     [[NSFetchedResultsController alloc]
@@ -64,11 +52,8 @@
      cacheName:@"Item"];
     
     _fetchedResultsController = myFetchedResultsController;
-    
     [_fetchedResultsController performFetch:nil];
-    
     return _fetchedResultsController;
-    
 }
 
 #pragma mark - DataStore methods
@@ -78,14 +63,14 @@
     NSArray *itemName = @[@"Apples", @"Oranges", @"Kiwis", @"Mangoes", @"Apricots"];
     
     for (int i=0; i<[itemName count]; i++) {
-        
+
         Item *item = [NSEntityDescription insertNewObjectForEntityForName:@"Item" inManagedObjectContext:self.managedObjectContext];
         
         item.name = [itemName objectAtIndex:i];
         
         item.timeStamp = [NSDate date];
         
-        NSLog(@"today is:%@", item.timeStamp);
+        //NSLog(@"today is:%@", item.timeStamp);
         
         item.category = @"Fruits";
         
@@ -96,40 +81,31 @@
 }
 
 -(NSString*)differenceInDaysfromTimeStamp:(NSDate*)timeStamp {
-    
     NSDateFormatter *dateFormatter= [[NSDateFormatter alloc]init];
-    
     dateFormatter.dateFormat = @"MM/dd/YY";
     
-    NSString *dateString = [dateFormatter stringFromDate:timeStamp];
+    //NSString *dateString = [dateFormatter stringFromDate:timeStamp];
     
-    NSLog(@"date is:%@", dateString);
+    //NSLog(@"date is:%@", dateString);
     
     NSDate *date = [NSDate date];
-    
     NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
-    
     NSDateComponents *components = [calendar components:NSYearCalendarUnit|NSMonthCalendarUnit|NSDayCalendarUnit
                                                fromDate:timeStamp
                                                  toDate:date
                                                 options:0];
     
-    NSLog(@"Difference in date components: %i/", components.day);
+    //NSLog(@"Difference in date components: %i/", components.day);
     
     if (components.day ==0) {
-        
         _returnString = @"Added today";
-        
     }
     
     else if (components.day!=0){
-        
         _returnString = [NSString stringWithFormat:@"Added %ld days ago", (long)components.day];
     }
     
-    NSLog(@"%@", _returnString);
-
-    
+    //NSLog(@"%@", _returnString);
     return _returnString;
 }
 
@@ -140,7 +116,6 @@
     if (_managedObjectContext != nil) {
         return _managedObjectContext;
     }
-    
     NSPersistentStoreCoordinator *coordinator = [self persistentStoreCoordinator];
     if (coordinator != nil) {
         _managedObjectContext = [[NSManagedObjectContext alloc] init];
@@ -173,7 +148,6 @@
         NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
         abort();
     }
-    
     return _persistentStoreCoordinator;
 }
 
